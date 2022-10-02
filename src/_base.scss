@@ -1,0 +1,51 @@
+/*! BASIC STYLES MODIFIED */
+body {
+    font-family: $font-family-body-roboto;
+    font-size: 1em;
+    line-height: 2em;
+    background: $background-img-bg;
+    margin: 0;
+
+    main {
+        width: 940px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+}
+
+
+/*! HEADER MODIFIED */
+header {
+    width: inherit;
+    clear: both;
+    text-align: center;
+    padding-top: 40px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        color: $red;
+        font-weight: 100;
+        font-size: 4em;
+        line-height: 0;
+    }
+
+    h2 {
+        color: $background;
+        font-weight: 900;
+        font-size: 2.5em;
+        line-height: 0;
+        margin-bottom: 70px;
+    }
+
+    h3 {
+        color: $grey;
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 0;
+        margin-bottom: 50px;
+    }
+}
