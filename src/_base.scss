@@ -18,28 +18,22 @@ main {
 
 /*! NAVIGATION MODIFIED */
 figure {
-    width: 400px;
-    height: 190px;
-    background: $background-img-logo;
-    float: left;
-    display: block;
-    margin: 0;
+    @include figure-area ($background-img-logo);
+
 }
 
 nav {
-    width: 540px;
-    height: 190px;
-    float: left;
-    text-align: right;
+    @include nav-area($nav-width, $nav-height);
+
 
     ul {
-      
+
         list-style-type: none;
         margin-top: 95px;
     }
 
     ul li {
-     
+
         display: inline;
         font-size: 0.8em;
         margin-right: 10px;
@@ -73,25 +67,17 @@ header {
     }
 
     h1 {
-        color: $red;
-        font-weight: 100;
-        font-size: $header-size;
-        line-height: 0;
+        @include header-titles ($red, 100, $header-size, 0, 0, 70px);
+
     }
 
     h2 {
-        color: $background;
-        font-weight: 900;
-        font-size: $header-size - 1.5;
-        line-height: 0;
-        margin-bottom: 70px;
+        @include header-titles ($background, 900, $header-size, 1.5, 0, 70px);
+
     }
 
     h3 {
-        color: $grey;
-        font-weight: 400;
-        font-size: $header-size - 2;
-        line-height: 0;
-        margin-bottom: 50px;
+        @include header-titles ($grey, 400, $header-size, 2, 0, 50px);
+
     }
 }

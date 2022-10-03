@@ -362,7 +362,8 @@ header {
     color: #E65C43;
     font-weight: 100;
     font-size: 4rem;
-    line-height: 0; }
+    line-height: 0;
+    margin-bottom: 70px; }
   header h2 {
     color: #FFF;
     font-weight: 900;
