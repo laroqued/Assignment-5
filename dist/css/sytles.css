@@ -310,10 +310,39 @@ body {
   line-height: 2em;
   background: url("../images/bg.gif") #FFF repeat-x;
   margin: 0; }
-  body main {
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px; }
+
+main {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+/*! NAVIGATION MODIFIED */
+figure {
+  width: 400px;
+  height: 190px;
+  background: url("../images/logo.png") no-repeat 0 50px;
+  float: left;
+  display: block;
+  margin: 0; }
+
+nav {
+  width: 540px;
+  height: 190px;
+  float: left;
+  text-align: right; }
+  nav ul {
+    list-style-type: none;
+    margin-top: 95px; }
+  nav ul li {
+    display: inline;
+    font-size: 0.8em;
+    margin-right: 10px; }
+  nav ul li a {
+    color: #E65C43;
+    text-decoration: none;
+    letter-spacing: -0.01em; }
+    nav ul li a:hover {
+      color: #FFF; }
 
 /*! HEADER MODIFIED */
 header {
@@ -322,23 +351,28 @@ header {
   text-align: center;
   padding-top: 40px; }
   header img {
+    background: linear-gradient(to bottom, #E65C43, rgba(0, 0, 0, 0.7)), url("../dist/images/devices.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
     max-width: 100%;
     height: auto; }
   header h1 {
     color: #E65C43;
     font-weight: 100;
-    font-size: 4em;
+    font-size: 4rem;
     line-height: 0; }
   header h2 {
     color: #FFF;
     font-weight: 900;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     line-height: 0;
     margin-bottom: 70px; }
   header h3 {
     color: #666;
     font-weight: 400;
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 0;
     margin-bottom: 50px; }
 
@@ -463,34 +497,6 @@ header {
     footer img {
       float: none;
       margin: 0; } }
-
-/*! NAVIGATION MODIFIED */
-figure {
-  width: 400px;
-  height: 190px;
-  background: url("../images/logo.png") no-repeat 0 50px;
-  float: left;
-  display: block;
-  margin: 0; }
-
-nav {
-  width: 540px;
-  height: 190px;
-  float: left;
-  text-align: right; }
-  nav ul {
-    list-style-type: none;
-    margin-top: 95px; }
-  nav ul li {
-    display: inline;
-    font-size: 0.8em;
-    margin-right: 10px; }
-  nav ul li a {
-    color: #E65C43;
-    text-decoration: none;
-    letter-spacing: -0.01em; }
-    nav ul li a:hover {
-      color: #FFF; }
 
 /* FOOTER MODIFIED */
 .greybar {

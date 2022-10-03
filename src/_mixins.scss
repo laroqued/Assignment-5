@@ -1,0 +1,37 @@
+@mixin break($args...) {
+    @if length($args)==1 {
+        @media (min-width: nth($args, 1)) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (min-width: nth($args, 1)) and (max-width: nth($args, 2)) {
+            @content;
+        }
+    }
+}
+
+@mixin clearfix {
+
+    &:before,
+    &::after {
+        content: '';
+        display: block;
+    }
+
+    &::after {
+        clear: both
+    }
+}
+
+@mixin backImage($image, $height: 100vh) {
+    background: linear-gradient(to bottom,
+            $red,
+            rgba(0, 0, 0, .7)),
+        url($image);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: $height;
+}

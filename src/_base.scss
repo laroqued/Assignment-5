@@ -6,12 +6,57 @@ body {
     background: $background-img-bg;
     margin: 0;
 
-    main {
-        width: 940px;
-        margin: 0 auto;
-        padding: 0 10px;
+
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+/*! NAVIGATION MODIFIED */
+figure {
+    width: 400px;
+    height: 190px;
+    background: $background-img-logo;
+    float: left;
+    display: block;
+    margin: 0;
+}
+
+nav {
+    width: 540px;
+    height: 190px;
+    float: left;
+    text-align: right;
+
+    ul {
+      
+        list-style-type: none;
+        margin-top: 95px;
+    }
+
+    ul li {
+     
+        display: inline;
+        font-size: 0.8em;
+        margin-right: 10px;
+    }
+
+    ul li a {
+        color: $red;
+        text-decoration: none;
+        letter-spacing: -0.01em;
+
+        &:hover {
+            color: $background;
+        }
     }
 }
+
+
 
 
 /*! HEADER MODIFIED */
@@ -22,6 +67,7 @@ header {
     padding-top: 40px;
 
     img {
+        @include backImage('../dist/images/devices.png');
         max-width: 100%;
         height: auto;
     }
@@ -29,14 +75,14 @@ header {
     h1 {
         color: $red;
         font-weight: 100;
-        font-size: 4em;
+        font-size: $header-size;
         line-height: 0;
     }
 
     h2 {
         color: $background;
         font-weight: 900;
-        font-size: 2.5em;
+        font-size: $header-size - 1.5;
         line-height: 0;
         margin-bottom: 70px;
     }
@@ -44,7 +90,7 @@ header {
     h3 {
         color: $grey;
         font-weight: 400;
-        font-size: 2em;
+        font-size: $header-size - 2;
         line-height: 0;
         margin-bottom: 50px;
     }
